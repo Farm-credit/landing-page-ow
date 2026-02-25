@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer/Footer";
+
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen  ">
@@ -7,9 +9,10 @@ export default function Home() {
           <header className="row-start-1">Body</header>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap bg-green-700">
+      {/* <footer className="row-start-3 flex gap-[24px] flex-wrap bg-green-700">
         Footer
-      </footer>
+      </footer> */}
+      <Footer/>
     </div>
   );
 }
