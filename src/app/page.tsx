@@ -4,6 +4,7 @@ import { BlockchainImpactSection } from '@/components/BlockchainImpactSection';
 import { WhyFarmCreditSection } from '@/components/WhyFarmCreditSection';
 import { HowItWorksSection } from '@/components/HowItWorksSection';
 import { MarketplaceSections } from '@/components/MarketplaceSections';
+import { FAQSection } from '@/components/FAQSection';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <WhyFarmCreditSection />
         <HowItWorksSection />
         <MarketplaceSections />
+        <FAQSection />
       </main>
       <footer className="w-full p-8 bg-green-700 hidden">
         Footer
