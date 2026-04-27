@@ -2,6 +2,7 @@ import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { BlockchainImpactSection } from '@/components/BlockchainImpactSection';
 import { WhyFarmCreditSection } from '@/components/WhyFarmCreditSection';
+import { HowItWorksSection } from '@/components/HowItWorksSection';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <BlockchainImpactSection />
         <WhyFarmCreditSection />
+        <HowItWorksSection />
       </main>
       <footer className="w-full p-8 bg-green-700 hidden">
         Footer
