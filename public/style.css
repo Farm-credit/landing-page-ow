@@ -1,0 +1,68 @@
+.how-it-works {
+    margin: 4em;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    p {
+        color: grey;
+        font-weight: bold;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.2em;
+
+    .card {
+        padding: .8em;
+
+        img {
+            border-radius: 1.5rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 200;
+        }
+
+        p {
+            color: grey;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cards {
+        display: block;
+    }
+
+    .how-it-works {
+        margin: 2em;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: grey;
+            font-weight: bold;
+            font-size: .8rem;
+        }
+    }
+}
