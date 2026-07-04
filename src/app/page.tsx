@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer";
-
+import FaqSection from "@/components/faq";
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen  ">
@@ -13,6 +13,27 @@ export default function Home() {
         Footer
       </footer> */}
       <Footer/>
-    </div>
+        <FaqSection />
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import { BlockchainImpactSection } from '@/components/BlockchainImpactSection';
+import { WhyFarmCreditSection } from '@/components/WhyFarmCreditSection';
+import { HowItWorksSection } from '@/components/HowItWorksSection';
+import { MarketplaceSections } from '@/components/MarketplaceSections';
+import { FAQSection } from '@/components/FAQSection';
+import { Footer } from '@/components/Footer';
+
+export default function Home() {
+  return (
+    <div className="font-sans min-h-screen flex flex-col w-full">
+      <Navbar />
+      <main className="flex flex-col w-full flex-1">
+        <Hero />
+        <BlockchainImpactSection />
+        <WhyFarmCreditSection />
+        <HowItWorksSection />
+        <MarketplaceSections />
+        <FAQSection />      </main>
+      <Footer />    </div>
   );
 }
