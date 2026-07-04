@@ -1,3 +1,14 @@
+import BlockchainVerification from "@/components/blockchain-verification";
+
+export default function Home() {
+  return (
+    <div className="font-sans min-h-screen">
+      <nav className="bg-amber-400 p-4">Nav</nav>
+      <main className="flex flex-col">
+        <BlockchainVerification />
+      </main>
+      <footer className="p-4 bg-green-700">
+        Footer
 import Navbar from "@/components/navbar";
 
 export default function Home() {
@@ -25,8 +36,7 @@ import FaqSection from "@/components/faq";export default function Home() {
         <LookingToDoMore />
       </main>
       <footer className="flex gap-[24px] flex-wrap bg-green-700 py-8">
-        <div className="container mx-auto px-4">Footer</div>
-      </footer>
+        <div className="container mx-auto px-4">Footer</div>      </footer>
     </div>
       {/* <footer className="row-start-3 flex gap-[24px] flex-wrap bg-green-700">
         Footer
