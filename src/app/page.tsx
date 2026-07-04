@@ -1,5 +1,5 @@
+import Footer from "@/components/Footer/Footer";
 import FaqSection from "@/components/faq";
-
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen  ">
@@ -8,6 +8,11 @@ export default function Home() {
         <div className="flex gap-4 items-center flex-col sm:flex-row bg-amber-800 flex-1 w-full">
           <header className="row-start-1">Body</header>
         </div>
+      </main>
+      {/* <footer className="row-start-3 flex gap-[24px] flex-wrap bg-green-700">
+        Footer
+      </footer> */}
+      <Footer/>
         <FaqSection />
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
@@ -29,7 +34,6 @@ export default function Home() {
         <HowItWorksSection />
         <MarketplaceSections />
         <FAQSection />      </main>
-      <Footer />
-    </div>
+      <Footer />    </div>
   );
 }
